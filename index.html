@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <script src="./js/main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="header">
+          <img src="./images/logo.svg" alt="" />
+        </div>
+        <div class="mid">
+          <div class="card1">
+            <div class="bill1">
+              <p>Bill</p>
+              <input
+                placeholder="0"
+                id="bi1"
+                class="bill"
+                type="text"
+                onchange="getres()"
+              />
+            </div>
+            <div class="yipp">
+              <p>Select Tip %</p>
+              <div class="box">
+                <div class="boxs">
+                  <input
+                    class="hidden"
+                    type="radio"
+                    name="r1"
+                    id="r1"
+                    value="5"
+                  />
+                  <label for="r1"> 5% </label>
+                  <input
+                    class="hidden"
+                    type="radio"
+                    name="r1"
+                    id="r2"
+                    value="10"
+                  />
+                  <label for="r2"> 10% </label>
+                  <input
+                    class="hidden"
+                    type="radio"
+                    name="r1"
+                    id="r3"
+                    value="15"
+                  />
+                  <label for="r3"> 15% </label>
+                </div>
+                <div class="boxs">
+                  <input
+                    class="hidden"
+                    type="radio"
+                    name="r1"
+                    id="r4"
+                    value="25"
+                  />
+                  <label for="r4"> 25% </label>
+                  <input
+                    class="hidden"
+                    type="radio"
+                    name="r1"
+                    id="r5"
+                    value="50"
+                  />
+                  <label for="r5"> 50% </label>
+                  <input
+                    onfocus="uncheck()"
+                    class="elem"
+                    placeholder="Custom"
+                    id="custom"
+                    type="text"
+                    onchange="getres()"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="numpp">
+              <p>Number Of People</p>
+              <input
+                class="npp"
+                id="np"
+                placeholder="0"
+                type="text"
+                onchange="getres()"
+              />
+            </div>
+          </div>
+
+          <div class="card2">
+            <div class="topp1">
+              <div class="top-card">
+                <div class="right-top1">
+                  <h3>Tip Amount</h3>
+                  <p>/ person</p>
+                </div>
+                <p class="price" id="price1">$0.00</p>
+              </div>
+              <div class="mid-card">
+                <div class="right-top2">
+                  <h3>Total</h3>
+                  <p>/ person</p>
+                </div>
+                <p class="price" id="price2">$0.00</p>
+              </div>
+            </div>
+            <div class="bott1">
+              <div class="bot-card">
+                <input type="button" value="RESET" onclick="reset()" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
