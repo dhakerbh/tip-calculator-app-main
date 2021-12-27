@@ -39,76 +39,87 @@
               <input
                 placeholder="0"
                 id="bi1"
-                class="bill"
+                class="bill inp"
                 type="text"
                 onchange="getres()"
+                onkeyup="this.onchange();"
+                onpaste="this.onchange();"
+                oninput="this.onchange();"
               />
             </div>
             <div class="yipp">
               <p>Select Tip %</p>
               <div class="box">
-                <div class="boxs">
-                  <input
-                    class="hidden"
-                    type="radio"
-                    name="r1"
-                    id="r1"
-                    value="5"
-                  />
-                  <label for="r1"> 5% </label>
-                  <input
-                    class="hidden"
-                    type="radio"
-                    name="r1"
-                    id="r2"
-                    value="10"
-                  />
-                  <label for="r2"> 10% </label>
-                  <input
-                    class="hidden"
-                    type="radio"
-                    name="r1"
-                    id="r3"
-                    value="15"
-                  />
-                  <label for="r3"> 15% </label>
-                </div>
-                <div class="boxs">
-                  <input
-                    class="hidden"
-                    type="radio"
-                    name="r1"
-                    id="r4"
-                    value="25"
-                  />
-                  <label for="r4"> 25% </label>
-                  <input
-                    class="hidden"
-                    type="radio"
-                    name="r1"
-                    id="r5"
-                    value="50"
-                  />
-                  <label for="r5"> 50% </label>
-                  <input
-                    onfocus="uncheck()"
-                    class="elem"
-                    placeholder="Custom"
-                    id="custom"
-                    type="text"
-                    onchange="getres()"
-                  />
-                </div>
+                <input
+                  class="hidden"
+                  type="radio"
+                  name="r1"
+                  id="r1"
+                  onclick="getres()"
+                  value="5"
+                />
+                <label class="elem" for="r1"> 5% </label>
+                <input
+                  class="hidden"
+                  type="radio"
+                  name="r1"
+                  id="r2"
+                  onclick="getres()"
+                  value="10"
+                />
+                <label class="elem" for="r2"> 10% </label>
+                <input
+                  class="hidden"
+                  type="radio"
+                  name="r1"
+                  id="r3"
+                  onclick="getres()"
+                  value="15"
+                />
+                <label class="elem" for="r3"> 15% </label>
+
+                <input
+                  class="hidden"
+                  type="radio"
+                  name="r1"
+                  id="r4"
+                  value="25"
+                  onclick="getres()"
+                />
+                <label class="elem" for="r4"> 25% </label>
+                <input
+                  class="hidden"
+                  type="radio"
+                  name="r1"
+                  id="r5"
+                  onclick="getres()"
+                  value="50"
+                />
+                <label class="elem" for="r5"> 50% </label>
+                <input
+                  onfocus="uncheck()"
+                  class="elem"
+                  placeholder="Custom"
+                  id="custom"
+                  type="text"
+                  onchange="getres()"
+                  onkeyup="this.onchange();"
+                  onpaste="this.onchange();"
+                  oninput="this.onchange();"
+                />
               </div>
             </div>
             <div class="numpp">
               <p>Number Of People</p>
               <input
-                class="npp"
+                class="npp inp"
                 id="np"
                 placeholder="0"
                 type="text"
                 onchange="getres()"
+                onkeyup="this.onchange();"
+                onpaste="this.onchange();"
+                oninput="this.onchange();"
               />
             </div>
           </div>
